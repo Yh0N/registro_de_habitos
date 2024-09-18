@@ -69,7 +69,7 @@ export default function Home() {
               text: 'Habit Progress Chart',
               font: {
                 size: 24,
-                weight: 'bold',
+                weight: 'bold' as const, // 'as const' ensures TypeScript treats it as a specific literal type
               },
               color: '#4f46e5'
             },
@@ -166,7 +166,6 @@ export default function Home() {
         <div className="col-span-3 text-center mb-8">
           <h1 className="text-5xl font-extrabold text-indigo-700">Registro de Hábitos</h1>
         </div>
-
 
         <div className="col-span-1 flex items-center justify-center bg-gray-100">
           <img
